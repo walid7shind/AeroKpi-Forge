@@ -19,7 +19,7 @@ Unlike standard RAG pipelines, AeroMind integrates:
 
 ## 🏗️ System Architecture
 
-![Main Architecture](docs/main_architecture.png)
+![Main Architecture](diagrams/0-global_pipeline.png)
 
 ### Pipeline
 
@@ -29,7 +29,7 @@ PDF → Vision Processing → Retrieval System → Extraction → KPI Engine →
 
 ## 🗂️ Data Architecture
 
-![Data Architecture](docs/data_architecture.png)
+![Data Architecture](data architecture/simplified architecture.png)
 
 The system follows a layered data lifecycle:
 
