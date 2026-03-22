@@ -29,7 +29,7 @@ PDF → Vision Processing → Retrieval System → Extraction → KPI Engine →
 
 ## 🗂️ Data Architecture
 
-![Data Architecture](data architecture/simplified architecture.png)
+![Data Architecture](data_architecture/simplified_architecture.png)
 
 The system follows a layered data lifecycle:
 
