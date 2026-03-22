@@ -1,0 +1,135 @@
+# 🚀 AeroMind
+### Multimodal KPI Extraction & Validation Engine for Financial Reports
+
+AeroMind is a production-grade AI system designed to extract, reconstruct, and validate structured KPIs from unstructured financial documents (PDFs, graphs, tables).
+
+Unlike standard RAG pipelines, AeroMind integrates **multimodal processing, custom retrieval logic, dependency-aware computation, and validation constraints** to produce reliable and auditable outputs.
+
+---
+
+## 🧠 Overview
+
+AeroMind transforms raw documents into structured, validated insights:
+
+\[
+Documents \rightarrow Structured\ KPIs \rightarrow Validated\ Outputs
+\]
+
+It is designed for **high-reliability environments** such as finance, aviation, and enterprise analytics.
+
+---
+
+## 🏗️ System Architecture
+
+<p align="center">
+  <img src="diagrams/0-global_pipeline.png" width="800"/>
+</p>
+
+### Pipeline
+PDF → Vision Processing → Retrieval System → Extraction → KPI Engine → Validation → Output
+---
+
+## 🗂️ Data Architecture
+
+<p align="center">
+  <img src="data architecture/simplified architecture.png" width="500"/>
+</p>
+
+The system follows a layered data lifecycle:
+
+- **Input Layer** → raw PDFs / documents  
+- **Processing Layer** → OCR + vision parsing  
+- **Retrieval Layer** → chunking, embeddings, ranking  
+- **KPI Layer** → structured & computed metrics  
+- **Output Layer** → datasets & reports  
+- **Observability Layer** → logs, metrics, validation  
+
+---
+
+## ⚙️ Core Components
+
+### 🔹 1. Multimodal Processing
+- OCR + vision-based graph parsing  
+- Handles noisy PDFs and structured/unstructured layouts  
+
+---
+
+### 🔹 2. Retrieval System
+
+Custom retrieval beyond standard RAG:
+
+\[
+score = importance + \lambda \cdot cosine\_similarity
+\]
+
+- semantic similarity  
+- domain-aware ranking  
+- multi-query retrieval (paraphrases + HyDE)
+
+---
+
+### 🔹 3. Structured Extraction
+
+- LLM-based extraction → strict JSON schema  
+- separation of extraction vs computation  
+
+---
+
+### 🔹 4. KPI Engine (Core Intelligence)
+
+Dependency-aware computation:
+
+\[
+KPI = f(dependencies,\ history,\ extracted\ values)
+\]
+
+- reconstruct missing KPIs  
+- use historical data  
+- apply deterministic functions  
+
+---
+
+### 🔹 5. Validation Layer
+
+Constraint-based verification:
+
+\[
+total = \sum components
+\]
+
+- cross-KPI consistency  
+- anomaly detection  
+- confidence scoring  
+
+---
+
+### 🔹 6. Observability (LLMOps)
+
+- latency tracking  
+- token usage monitoring  
+- pipeline logging  
+- audit & verification  
+
+---
+
+## 📊 Example
+
+### Input
+Airline financial report (PDF)
+
+### Output
+```json
+{
+  "revenue": "12.3B",
+  "growth": "5.2%",
+  "operating_margin": "18%",
+  "confidence": 0.87,
+  "status": "validated"
+}
+⚡ Key Innovations
+✅ Multimodal document understanding
+✅ Custom retrieval scoring (not standard RAG)
+✅ Signed / structured reasoning signals
+✅ Dependency-based KPI reconstruction
+✅ Constraint-driven validation
+✅ Production-level observability
