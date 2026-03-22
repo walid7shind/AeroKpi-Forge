@@ -126,10 +126,3 @@ Airline financial report (PDF)
   "confidence": 0.87,
   "status": "validated"
 }
-⚡ Key Innovations
-✅ Multimodal document understanding
-✅ Custom retrieval scoring (not standard RAG)
-✅ Signed / structured reasoning signals
-✅ Dependency-based KPI reconstruction
-✅ Constraint-driven validation
-✅ Production-level observability
